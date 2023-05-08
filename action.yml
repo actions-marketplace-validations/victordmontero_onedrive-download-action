@@ -1,0 +1,15 @@
+name: Download from OneDrive
+description: Download a file from OneDrive
+author: Victor D. Montero <victordanielmontero@gmail.com>
+inputs:
+  file:
+    description: 'The OneDrive file ID or path to download'
+    required: true
+    default: ''
+  output:
+    description: 'The output file name (including extension)'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Download from OneDrive
-      uses: yourusername/download-from-onedrive@v1.0.0
+      uses: victordmontero/download-from-onedrive@v1.0.0
       with:
         file: ${{ secrets.ONEDRIVE_FILE }}
         output: file.txt
